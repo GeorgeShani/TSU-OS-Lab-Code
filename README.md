@@ -77,6 +77,6 @@ This repository demonstrates key Operating Systems concepts including:
 
 ## 📬 Contact
 
-Created by Giorgi Shanidze
+Created by [Giorgi Shanidze](https://github.com/GeorgeShani)
 
 If you have questions or suggestions, feel free to open an issue or reach out via GitHub.
