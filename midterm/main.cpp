@@ -53,15 +53,15 @@ public:
  * Add data reading and writing functions to the myPipe class below.
  */
 
-// Pipe class for handling pipe communication
-class Pipe
+// myPipe class for handling pipe communication
+class myPipe
 {
 private:
     int pipefd[2];
     bool isOpen;
 
 public:
-    Pipe() : isOpen(false) {}
+    myPipe() : isOpen(false) {}
 
     bool create()
     {
@@ -117,7 +117,7 @@ public:
         return write(pipefd[1], buf, count);
     }
 
-    ~Pipe()
+    ~myPipe()
     {
         close();
     }
@@ -150,8 +150,8 @@ public:
 int main()
 {
     // Create pipe instances for process communication
-    Pipe pipe_P2_P4;
-    Pipe pipe_P4_P3;
+    myPipe pipe_P2_P4;
+    myPipe pipe_P4_P3;
 
     // Create the pipes
     if (!pipe_P2_P4.create() || !pipe_P4_P3.create())
