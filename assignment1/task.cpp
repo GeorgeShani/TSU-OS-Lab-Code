@@ -120,10 +120,8 @@ public:
     {
         if (this != &other)
         {
-            delete[] buffer;
-            bufferSize = other.bufferSize;
-            buffer = new char[bufferSize];
-            memcpy(buffer, other.buffer, bufferSize);
+            this->~myPipe();
+            new (this) myPipe(other);
         }
         return *this;
     }
