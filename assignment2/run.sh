@@ -1,0 +1,1 @@
+make clean && make run && make clean-shm
